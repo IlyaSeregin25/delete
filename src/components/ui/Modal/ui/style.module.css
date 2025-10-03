@@ -1,0 +1,58 @@
+.modal.modal_active {
+  opacity: 1;
+  visibility: visible;
+  transition: all var(--transitionDuration);
+}
+.modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transitionDuration);
+  overflow-y: auto;
+}
+.modal__btn_close {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  background-color: var(--milk);
+  border: 1px solid var(--sea);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all var(--transitionDuration);
+}
+.modal__btn_close:hover,
+.modal__btn_close:focus {
+  scale: 1.1;
+  transition: all var(--transitionDuration);
+}
+.modal__btn_close::after,
+.modal__btn_close::before {
+  position: absolute;
+  content: '';
+  top: calc(50% - 2px);
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: black;
+}
+.modal__btn_close::after {
+  transform: rotate(45deg);
+}
+.modal__btn_close::before {
+  transform: rotate(-45deg);
+}
+.modal__body {
+  background-color: rgb(165, 67, 67);
+  background-color: var(--milk);
+  border-radius: 1rem;
+  padding: 1rem;
+  min-width: 50vw;
+}

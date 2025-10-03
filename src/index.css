@@ -1,0 +1,17 @@
+:root {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--dark);
+  background-color: var(--white);
+}
+body.lock {
+  overflow: hidden;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: var(--padding);
+}

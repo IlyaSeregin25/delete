@@ -1,0 +1,77 @@
+:root {
+  --bg-main: #ffffff;
+  --bg-card: #ffffff;
+  --opacity: 0.4;
+  --transitionDuration: 0.3s ease;
+  --padding: 1.7856em;
+  --borderRadius: 6px;
+  --boxShadow: 0 0 0 1px #b8b8b8;
+  --paddingBlock: 5rem;
+
+  --dark: #191919;
+  --white: #fff;
+  --sea: #616e74;
+  --green: #18c521;
+  --yellow: #fefe6e;
+  --blue: #29b6f6;
+  --accent: #006aff;
+  --orange: #ffc863;
+  --milk: rgb(251, 251, 251);
+  --grey: #b8b8b8;
+
+  --dark-sea: #576067;
+  --violet: #8b57c6;
+  --violet-dark: #6c3eb8;
+  --light: #f6f6f7;
+
+  /* 
+  --requiredBorder: 1px solid red;
+  --widthSideBar: 300px;
+   */
+
+  --fontSizeTitle: 2rem;
+  /* 
+   10px = 0.7143em
+   14px = 1em
+   16px = 1.143em
+   18px = 1.286em
+   20px = 1.4286em
+   22px = 1.5714em
+   25px = 1.7856em
+   26px = 1.8571em
+   50px = 3.5714em
+   60px = 4.2857em
+   80px = 5.7143em
+   100px = 7.143em
+   350px = 25em;
+   400px = 28.571em;
+   500px = 35.714em;
+   
+   */
+  /* 
+  --laptop: 1440.98px;
+  --tablet: 1023.98px;
+  --mobile: 767.98px;
+  --mobile-s: 480.98px;
+  @media (max-width: 1440.98px) {
+  }
+  @media (max-width: 1023.98px) {
+  }
+  @media (max-width: 767.98px) {
+  }
+  @media (max-width: 480.98px) {
+  }
+   */
+}
+@media (max-width: 1023.98px) {
+  :root {
+    --padding: 0.7143em;
+  }
+}
+@media (max-width: 767.98px) {
+  :root {
+    --padding: 0.5em;
+    --paddingBlock: 4rem;
+    --fontSizeTitle: 1.6rem;
+  }
+}

@@ -1,0 +1,56 @@
+.telephones {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 2rem;
+}
+.telephones.column {
+  flex-direction: column;
+}
+.telephones li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.286rem;
+  font-weight: 500;
+}
+.telephones.wide li {
+  color: red;
+  font-size: 1.8571rem;
+  font-weight: 600;
+}
+.telephones * a {
+  text-decoration: none;
+  transition: all var(--transitionDuration);
+}
+.telephones * a:hover {
+  color: var(--accent);
+  transition: all var(--transitionDuration);
+}
+.telephones li * svg {
+  display: block;
+  height: 2.8572rem;
+  width: 2.8572rem;
+  transition: all var(--transitionDuration);
+}
+.telephones li * svg:hover {
+  transform: scale(1.1);
+  transition: all var(--transitionDuration);
+}
+
+@media (max-width: 767.98px) {
+  .telephones {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 480.98px) {
+  .telephones li {
+    gap: 0.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .telephones.wide li {
+    font-size: 1.4286rem;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,12 @@
+.body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.body__header {
+}
+.body__main {
+  flex-grow: 1;
+}
+.body__footer {
+}
