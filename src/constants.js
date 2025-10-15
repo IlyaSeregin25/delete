@@ -1,9 +1,9 @@
 import INTELLIGENCE from '@assets/services/intelligence.jpg';
 import I_AND_MOM from '@assets/services/i-and-mom.jpg';
 import PRESCHOOLER from '@assets/services/preschooler.jpg';
-import ADDRESS_1 from '@assets/addresses/address_2.jpg';
+import ADDRESS_1 from '@assets/addresses/address_1.jpg';
 import ADDRESS_2 from '@assets/addresses/address_2.jpg';
-import ADDRESS_3 from '@assets/addresses/address_2.jpg';
+import ADDRESS_3 from '@assets/addresses/address_3.jpg';
 import ADDRESS_4 from '@assets/addresses/address_4.jpg';
 import IMG_1 from './assets/photos/1.jpeg';
 import IMG_2 from './assets/photos/2.jpeg';
@@ -24,10 +24,46 @@ export const DATA_FOR_COMMUNICATION = {
     },
   ],
   addresses: [
-    { address: 'г. Самара, ул. Ленинская, 166', img: ADDRESS_1 },
-    { address: 'г. Самара, ул. Белорусская, д.131', img: ADDRESS_2 },
-    { address: 'г. Самара, ул. Белорусская, д.24', img: ADDRESS_3 },
-    { address: 'г. Самара, ул. Осетинская, д.2', img: ADDRESS_4 },
+    {
+      address: 'г. Самара, ул. Ленинская, 166',
+      img: ADDRESS_1,
+      photos: [
+        { id: 1, src: IMG_1 },
+        { id: 2, src: IMG_2 },
+        { id: 3, src: IMG_3 },
+      ],
+      video: '//vk.com/video_ext.php?oid=-48049528&id=456239020',
+    },
+    {
+      address: 'г. Самара, ул. Белорусская, д.131',
+      img: ADDRESS_2,
+      photos: [
+        { id: 1, src: IMG_4 },
+        { id: 2, src: IMG_5 },
+        { id: 3, src: IMG_6 },
+      ],
+      video: '//vk.com/video_ext.php?oid=-48049528&id=456239020',
+    },
+    {
+      address: 'г. Самара, ул. Белорусская, д.24',
+      img: ADDRESS_3,
+      photos: [
+        { id: 1, src: IMG_7 },
+        { id: 2, src: IMG_8 },
+        { id: 3, src: IMG_9 },
+      ],
+      video: '//vk.com/video_ext.php?oid=-48049528&id=456239020',
+    },
+    {
+      address: 'г. Самара, ул. Осетинская, д.2',
+      img: ADDRESS_4,
+      photos: [
+        { id: 1, src: IMG_1 },
+        { id: 2, src: IMG_2 },
+        { id: 3, src: IMG_3 },
+      ],
+      video: '//vk.com/video_ext.php?oid=-48049528&id=456239020',
+    },
     /*     'г. Самара, ул. Ленинская, 166 (Ленинский район)',
     'г. Самара, ул. Белорусская, д.131 (п. Сухая Самарка)',
     'г. Самара, ул. Белорусская, д.24 (п. Сухая Самарка, Нефтемаш)',
