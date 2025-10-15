@@ -23,6 +23,9 @@
   display: grid;
   gap: 0.5rem;
 }
+.addresses__list.addresses__list_images li p {
+  text-align: center;
+}
 .addresses__list.addresses__list_images li img {
   display: block;
   margin-inline: auto;
