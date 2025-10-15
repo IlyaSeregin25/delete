@@ -51,7 +51,15 @@ const PhotosPage = () => {
                     </div>
                     <div className={styles.gallery__item_video}>
                       <div className={styles.gallery__item_video_box}>
-                        <iframe src={video} width="100%" height="100%" frameBorder="0" allowFullScreen></iframe>
+                        <p>Видео загружается</p>
+                        <iframe
+                          src={video}
+                          width="100%"
+                          height="100%"
+                          frameBorder="0"
+                          allowFullScreen
+                          loading="lazy"
+                        ></iframe>
                       </div>
                     </div>
                   </div>
