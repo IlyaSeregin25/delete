@@ -1,8 +1,17 @@
 :root {
+  --bg: #d3fdfe;
+  --magenta: #e5097f;
+  --dark_magenta: rgb(121, 24, 72);
+  --red: #e31e24;
+  --orange: #ef7f1a;
+  --green: #039243;
+  --pea: #adc895;
+  --transitionDuration: 0.3s ease;
+  --border: 4px white solid;
+
   --bg-main: #ffffff;
   --bg-card: #ffffff;
   --opacity: 0.4;
-  --transitionDuration: 0.3s ease;
   --padding: 1.7856em;
   --borderRadius: 6px;
   --boxShadow: 0 0 0 1px #b8b8b8;
@@ -11,11 +20,9 @@
   --dark: #191919;
   --white: #fff;
   --sea: #616e74;
-  --green: #18c521;
   --yellow: #fefe6e;
   --blue: #29b6f6;
   --accent: #006aff;
-  --orange: #ffc863;
   --milk: rgb(251, 251, 251);
   --grey: #b8b8b8;
 
@@ -24,25 +31,36 @@
   --violet-dark: #6c3eb8;
   --light: #f6f6f7;
 
-  /* 
-  --requiredBorder: 1px solid red;
-  --widthSideBar: 300px;
-   */
-
   --fontSizeTitle: 2rem;
   /* 
+   2px = 0.143em
+   3px = 0.214em
+   5px = 0.357em
+   7px = 0.5em
    10px = 0.7143em
+   12px = 0.857em
    14px = 1em
    16px = 1.143em
    18px = 1.286em
    20px = 1.4286em
    22px = 1.5714em
+   24px = 1.715em
    25px = 1.7856em
    26px = 1.8571em
+   28px = 2em
+   36px = 2.5714em
+   40px = 2.857em
    50px = 3.5714em
    60px = 4.2857em
+   65px = 4.643em
+   70px = 5em
    80px = 5.7143em
    100px = 7.143em
+   105px = 7.5em
+   120px = 8.57em
+   150px = 10.714em
+   200px = 14.29em
+   300px = 21.42857em;
    350px = 25em;
    400px = 28.571em;
    500px = 35.714em;

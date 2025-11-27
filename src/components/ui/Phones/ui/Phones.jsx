@@ -2,8 +2,8 @@ import { DATA_FOR_COMMUNICATION } from '@/constants';
 import TELEGRAM from '@assets/telegram.svg?react';
 import styles from './style.module.css';
 
-const Phones = ({ clName, wide }) => {
-  let cl = clName === 'column' && styles.column;
+const Phones = ({ className, wide, icon = true }) => {
+  let cl = className === 'column' && styles.column;
   cl = wide === 'wide' ? `${styles.wide} + ${cl}` : cl;
   return (
     <>
@@ -12,7 +12,7 @@ const Phones = ({ clName, wide }) => {
           {DATA_FOR_COMMUNICATION.telephones.map((people, index) => {
             return (
               <li key={index}>
-                {people.telegram && (
+                {icon && (
                   <a
                     href={`https://telegram.me/${people.telegram}`}
                     target="_blank"
