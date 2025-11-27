@@ -14,16 +14,18 @@
   font-weight: 500;
 }
 .telephones.wide li {
-  color: red;
-  font-size: 1.8571rem;
-  font-weight: 600;
+  color: black;
+  font-size: 1.715rem;
+  font-weight: 500;
 }
 .telephones * a {
   text-decoration: none;
   transition: all var(--transitionDuration);
 }
-.telephones * a:hover {
-  color: var(--accent);
+.telephones * a:hover,
+.telephones * a:active,
+.telephones * a:focus {
+  color: var(--magenta);
   transition: all var(--transitionDuration);
 }
 .telephones li * svg {
@@ -37,20 +39,26 @@
   transition: all var(--transitionDuration);
 }
 
+@media (max-width: 820.98px) {
+  .telephones.wide li {
+    font-size: 1.4286rem;
+  }
+}
 @media (max-width: 767.98px) {
   .telephones {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
+@media (max-width: 600.98px) {
+  .telephones.wide li {
+    font-size: 1.143rem;
+  }
+}
 @media (max-width: 480.98px) {
   .telephones li {
     gap: 0.3rem;
     font-size: 1rem;
-    font-weight: 500;
-  }
-  .telephones.wide li {
-    font-size: 1.4286rem;
     font-weight: 500;
   }
 }

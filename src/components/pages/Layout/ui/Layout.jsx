@@ -17,9 +17,7 @@ const Layout = () => {
       <main className={styles.body__main}>
         <Outlet />
       </main>
-      <footer className={styles.body__footer}>
-        <Footer />
-      </footer>
+      <footer className={styles.body__footer}>{/* <Footer /> */}</footer>
     </div>
   );
 };
