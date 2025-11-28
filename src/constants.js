@@ -1,6 +1,7 @@
 import INTELLIGENCE from '@assets/services/intelligence.jpg';
 import I_AND_MOM from '@assets/services/i-and-mom.jpg';
 import PRESCHOOLER from '@assets/services/preschooler.jpg';
+import LOGOPEDIST from '@assets/services/logopedist.jpg';
 import ADDRESS_1 from '@assets/addresses/address_1.jpg';
 import ADDRESS_2 from '@assets/addresses/address_2.jpg';
 import ADDRESS_3 from '@assets/addresses/address_3.jpg';
@@ -274,7 +275,7 @@ export const SERVICES_LIST = [
     id: 4,
     title: 'Изо студия',
     ageCategory: 'от 4 лет',
-    mainImage: PRESCHOOLER,
+    mainImage: 'PRESCHOOLER',
     priceSinglePayment: 'разовое занятие от 800',
     priceAbonement: 'абонемент от 4000',
     url: '/xxx',
@@ -333,7 +334,7 @@ export const SERVICES_LIST = [
     id: 5,
     title: 'Логопед',
     ageCategory: 'от 1 года',
-    mainImage: INTELLIGENCE,
+    mainImage: LOGOPEDIST,
     price: '(40мин) от 1000',
     url: '/logopedist',
     page: {
