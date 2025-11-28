@@ -1,6 +1,6 @@
+import { DATA_FOR_COMMUNICATION } from '@/constants';
 import IMAGE from '@assets/bg1.jpg';
 import styles from './style.module.css';
-import { DATA_FOR_COMMUNICATION } from '@/constants';
 
 const AboutUsPage = () => {
   const { vk } = DATA_FOR_COMMUNICATION.socials;
@@ -62,6 +62,17 @@ const AboutUsPage = () => {
             </a>
             , с радость ответим на все ваши вопросы.
           </p>
+        </div>
+        <div className={styles.about_us__teachers}>
+          <h3 className={styles.about_us__teachers_title}>Наши педагоги</h3>
+          <div className={styles.about_us__teachers_photos}>
+            <img src={IMAGE} alt="" width="100%" height="200px" />
+            <img src={IMAGE} alt="" width="100%" height="200px" />
+            <img src={IMAGE} alt="" width="100%" height="200px" />
+            <img src={IMAGE} alt="" width="100%" height="200px" />
+            <img src={IMAGE} alt="" width="100%" height="200px" />
+            <img src={IMAGE} alt="" width="100%" height="200px" />
+          </div>
         </div>
       </div>
     </section>

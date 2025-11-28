@@ -13,7 +13,7 @@ const ContactsPage = () => {
           <div className={styles.contacts__card}>
             <h4 className={styles.contacts__card_title}>Телефон</h4>
             <div className={styles.contacts__card_body}>
-              <Phones />
+              <Phones icon={false} />
             </div>
           </div>
           <div className={styles.contacts__card}>
