@@ -12,7 +12,9 @@
   text-decoration: none;
   transition: all var(--transitionDuration);
 }
-.soc1als_list li:hover .soc1als__link {
+.soc1als__link:hover,
+.soc1als__link:active,
+.soc1als__link:focus {
   color: var(--accent);
   transition: all var(--transitionDuration);
 }
@@ -22,7 +24,8 @@
   width: 2.8572rem;
   transition: all var(--transitionDuration);
 }
-.soc1als_list li:hover * svg {
+.soc1als__link:hover svg,
+.soc1als__link:active svg {
   transform: scale(1.1);
   transition: all var(--transitionDuration);
 }
