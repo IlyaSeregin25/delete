@@ -1,4 +1,4 @@
-import SectionServices from '@/components/ui/SectionServices';
+import SectionServices from '@/components/ui/SectionTeachers';
 import SectionAdvantages from '@/components/ui/SectionAdvantages';
 import BG from '@assets/main-bg.jpg';
 import ANIMAL from '@assets/animal.png';

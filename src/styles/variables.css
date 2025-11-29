@@ -15,7 +15,7 @@
   --padding: 1.7856em;
   --borderRadius: 6px;
   --boxShadow: 0 0 0 1px #b8b8b8;
-  --paddingBlock: 5rem;
+  --paddingBlock: 2.5rem;
 
   --dark: #191919;
   --white: #fff;
@@ -89,7 +89,7 @@
 @media (max-width: 767.98px) {
   :root {
     --padding: 0.5em;
-    --paddingBlock: 4rem;
+    --paddingBlock: 1rem;
     --fontSizeTitle: 1.6rem;
   }
 }
