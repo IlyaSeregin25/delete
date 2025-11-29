@@ -38,44 +38,26 @@
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  padding-inline: 1.4286rem;
-  padding-block: 2rem;
+  padding-inline: 0.7143rem;
+  padding-block: 0.5rem;
   font-family: 'Montserrat';
 }
 .card__title {
-  font-size: 1.4286em;
-  font-weight: 600;
-  margin-bottom: 0.2rem;
+  /* font-family: 'Roboto'; */
+  font-size: 1.143rem;
+  font-weight: 400;
   transition: all var(--transitionDuration);
 }
-.card__age_category {
-  font-size: 1.143rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-.card__prices {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 0.2em;
-  font-size: 1.4286em;
-  font-weight: 500;
-}
-
 @media (max-width: 767.98px) {
   .card {
     box-shadow: rgba(0, 0, 0, 0.247) 0px 1.86513px 6.21711px 0px;
   }
-  .card__title {
-    font-size: 1.286em;
+  .card__img {
+    height: 15rem;
   }
-  .card__age_category {
-    font-size: 1em;
-  }
-  .card__subtitle {
-    font-size: 1em;
-  }
-  .card__price {
-    font-size: 1.286em;
+}
+@media (max-width: 420.98px) {
+  .card__img {
+    height: 13rem;
   }
 }
