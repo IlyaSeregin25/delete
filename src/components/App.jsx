@@ -1,12 +1,12 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Layout from './pages/Layout';
 import MainPage from '@components/pages/MainPage';
 import AboutUsPage from './pages/AboutUsPage';
 import ContactsPage from './pages/ContactsPage';
-import Layout from './pages/Layout';
-import { PATHS } from '@/constants';
-import ServicesPage from './pages/ServicesPage';
 import ServicePage from './pages/ServicePage';
 import PhotosPage from './pages/PhotosPage';
+import TeachersPage from './pages/TeachersPage';
+import { PATHS } from '@/constants';
 
 function App() {
   const router = createBrowserRouter([
@@ -28,8 +28,8 @@ function App() {
           element: <PhotosPage />,
         },
         {
-          path: PATHS.services,
-          element: <ServicesPage />,
+          path: PATHS.teachers,
+          element: <TeachersPage />,
         },
         {
           path: PATHS.contacts,

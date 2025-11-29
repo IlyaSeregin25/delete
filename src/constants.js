@@ -79,7 +79,7 @@ export const PATHS = {
   main: '/',
   aboutUs: '/about-us',
   photos: '/photos',
-  services: '/services',
+  teachers: '/teachers',
   contacts: '/contacts',
 };
 export const PAGES = [
@@ -102,6 +102,38 @@ export const PAGES = [
   {
     name: 'Контакты',
     path: PATHS.contacts,
+  },
+];
+export const TEACHERS_LIST = [
+  {
+    id: 1,
+    title: 'Марина Ивановна М',
+    ageCategory: 'более 10лет',
+    mainImage: I_AND_MOM,
+  },
+  {
+    id: 2,
+    title: 'Марина Ивановна М',
+    ageCategory: 'более 10лет',
+    mainImage: I_AND_MOM,
+  },
+  {
+    id: 3,
+    title: 'Марина Ивановна М',
+    ageCategory: 'более 10лет',
+    mainImage: I_AND_MOM,
+  },
+  {
+    id: 4,
+    title: 'Марина Ивановна М',
+    ageCategory: 'более 10лет',
+    mainImage: I_AND_MOM,
+  },
+  {
+    id: 5,
+    title: 'Марина Ивановна М',
+    ageCategory: 'более 10лет',
+    mainImage: I_AND_MOM,
   },
 ];
 export const SERVICES_LIST = [
@@ -359,7 +391,7 @@ export const BUTTONS = [
   },
   {
     name: 'Наши педагоги',
-    path: PATHS.photos,
+    path: PATHS.teachers,
   },
 ];
 export const ADVANTAGES_LIST = [
