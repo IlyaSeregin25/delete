@@ -34,7 +34,7 @@ const ServicePage = () => {
         </div>
         <div className={styles.service_page__goals}>
           <div className={`${styles.service_page__goals_inner} container`}>
-            <h2 className={styles.service_page__goals_title}>Задачи программы</h2>
+            <h2 className={styles.service_page__goals_title}>{page.goals_title && page.goals_title}</h2>
             <ul className={styles.service_page__goals_list}>
               {page.goals?.map(({ title, subtitle }, ind) => {
                 return (
