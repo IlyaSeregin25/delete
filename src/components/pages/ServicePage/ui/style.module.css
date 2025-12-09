@@ -137,6 +137,7 @@
   }
   .service_page__goals_item {
     padding-left: 1rem;
+    font-size: 1.143rem;
   }
 }
 @media (max-width: 480.98px) {
