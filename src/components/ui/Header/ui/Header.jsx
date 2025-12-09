@@ -36,7 +36,7 @@ const Header = () => {
               <VK width={40} height={40} />
             </Button>
           </div>
-          <Link to={PATHS.contacts} className={styles.header_top_line__adresses}>
+          <Link to={PATHS.contacts} className={styles.header_top_line__adresses} title="Наши адреса">
             <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 fill-rule="evenodd"
@@ -60,7 +60,11 @@ const Header = () => {
                 SERVICES_LIST.map((service, index) => {
                   return (
                     <li key={index} className={styles.menu__item}>
-                      <NavLink to={service.url} className={props => (props.isActive ? styles.menu__item_active : '')}>
+                      <NavLink
+                        to={service.url}
+                        className={props => (props.isActive ? styles.menu__item_active : '')}
+                        title={service.title}
+                      >
                         <article className={styles.card}>
                           <h3 className={styles.card__title}>{service.title}</h3>
                           <p className={styles.card__subtitle}>{service.ageCategory}</p>
