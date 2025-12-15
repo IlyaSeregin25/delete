@@ -2,19 +2,33 @@ import INTELLIGENCE from '@assets/services/intelligence.jpg';
 import I_AND_MOM from '@assets/services/i-and-mom.jpg';
 import PRESCHOOLER from '@assets/services/preschooler.jpg';
 import LOGOPEDIST from '@assets/services/logopedist.jpg';
+import VISUAL_ARTS from '@assets/services/visual_arts.jpg';
 import ADDRESS_1 from '@assets/addresses/address_1.jpg';
 import ADDRESS_2 from '@assets/addresses/address_2.jpg';
 import ADDRESS_3 from '@assets/addresses/address_3.jpg';
 import ADDRESS_4 from '@assets/addresses/address_4.jpg';
-import IMG_1 from './assets/photos/1.jpeg';
-import IMG_2 from './assets/photos/2.jpeg';
-import IMG_3 from './assets/photos/3.jpeg';
-import IMG_4 from './assets/photos/4.jpeg';
-import IMG_5 from './assets/photos/5.jpeg';
-import IMG_6 from './assets/photos/6.jpg';
-import IMG_7 from './assets/photos/7.jpg';
-import IMG_8 from './assets/photos/8.jpg';
-import IMG_9 from './assets/photos/9.jpg';
+import FOUNDERS from '@assets/our_team/founders.jpg';
+import GUSEVA from '@assets/our_team/Elena_Guseva.jpg';
+import PICHUGOVA from '@assets/our_team/Galina_Pichugova.jpg';
+import KAZARINA from '@assets/our_team/Guzel_Kazarina.jpg';
+import POTAPOVA from '@assets/our_team/Larisa_Potapova.jpg';
+import BORISOVA from '@assets/our_team/Maria_Borisova.jpg';
+import HOMAZKOVA from '@assets/our_team/Marina_Homazkova.jpg';
+import ABRAMOVA from '@assets/our_team/Nadezhda_Abramova.jpg';
+import LUNKOVA from '@assets/our_team/Natalia_Lunkova.jpg';
+import KALASHNIKOVA from '@assets/our_team/Olga_Kalashnikova.jpg';
+import IMG_1_1 from './assets/photos/Leninskay_166/1.jpg';
+import IMG_1_2 from './assets/photos/Leninskay_166/2.jpg';
+import IMG_1_3 from './assets/photos/Leninskay_166/3.jpg';
+import IMG_1_4 from './assets/photos/Leninskay_166/4.jpg';
+import IMG_1_5 from './assets/photos/Leninskay_166/5.jpg';
+import IMG_1_6 from './assets/photos/Leninskay_166/6.jpg';
+import IMG_2_1 from './assets/photos/Osetinskay_2/1.jpg';
+import IMG_2_2 from './assets/photos/Osetinskay_2/2.jpg';
+import IMG_2_3 from './assets/photos/Osetinskay_2/3.jpg';
+import IMG_2_4 from './assets/photos/Osetinskay_2/4.jpg';
+import IMG_2_5 from './assets/photos/Osetinskay_2/5.jpg';
+import IMG_2_6 from './assets/photos/Osetinskay_2/6.jpg';
 
 export const DATA_FOR_COMMUNICATION = {
   telephones: [
@@ -29,9 +43,12 @@ export const DATA_FOR_COMMUNICATION = {
       address: 'г. Самара, ул. Ленинская, 166',
       img: ADDRESS_1,
       photos: [
-        { id: 1, src: IMG_1 },
-        { id: 2, src: IMG_2 },
-        { id: 3, src: IMG_3 },
+        { id: 1, src: IMG_1_1 },
+        { id: 2, src: IMG_1_2 },
+        { id: 3, src: IMG_1_3 },
+        { id: 4, src: IMG_1_4 },
+        { id: 5, src: IMG_1_5 },
+        { id: 6, src: IMG_1_6 },
       ],
       video: '//vk.com/video_ext.php?oid=-48049528&id=456239020',
     },
@@ -39,9 +56,12 @@ export const DATA_FOR_COMMUNICATION = {
       address: 'г. Самара, ул. Белорусская, д.131',
       img: ADDRESS_2,
       photos: [
-        { id: 1, src: IMG_4 },
-        { id: 2, src: IMG_5 },
-        { id: 3, src: IMG_6 },
+        { id: 1, src: IMG_1_1 },
+        { id: 2, src: IMG_1_2 },
+        { id: 3, src: IMG_1_3 },
+        { id: 4, src: IMG_1_4 },
+        { id: 5, src: IMG_1_5 },
+        { id: 6, src: IMG_1_6 },
       ],
       video: '//vk.com/video_ext.php?oid=-48049528&id=456239020',
     },
@@ -49,9 +69,12 @@ export const DATA_FOR_COMMUNICATION = {
       address: 'г. Самара, ул. Белорусская, д.24',
       img: ADDRESS_3,
       photos: [
-        { id: 1, src: IMG_7 },
-        { id: 2, src: IMG_8 },
-        { id: 3, src: IMG_9 },
+        { id: 1, src: IMG_1_1 },
+        { id: 2, src: IMG_1_2 },
+        { id: 3, src: IMG_1_3 },
+        { id: 4, src: IMG_1_4 },
+        { id: 5, src: IMG_1_5 },
+        { id: 6, src: IMG_1_6 },
       ],
       video: '//vk.com/video_ext.php?oid=-48049528&id=456239020',
     },
@@ -59,9 +82,12 @@ export const DATA_FOR_COMMUNICATION = {
       address: 'г. Самара, ул. Осетинская, д.2',
       img: ADDRESS_4,
       photos: [
-        { id: 1, src: IMG_1 },
-        { id: 2, src: IMG_2 },
-        { id: 3, src: IMG_3 },
+        { id: 1, src: IMG_2_1 },
+        { id: 2, src: IMG_2_2 },
+        { id: 3, src: IMG_2_3 },
+        { id: 4, src: IMG_2_4 },
+        { id: 5, src: IMG_2_5 },
+        { id: 6, src: IMG_2_6 },
       ],
       video: '//vk.com/video_ext.php?oid=-48049528&id=456239020',
     },
@@ -78,8 +104,8 @@ export const DATA_FOR_COMMUNICATION = {
 export const PATHS = {
   main: '/',
   aboutUs: '/about-us',
-  photos: '/photos',
   teachers: '/teachers',
+  photos: '/photos',
   contacts: '/contacts',
 };
 export const PAGES = [
@@ -104,38 +130,65 @@ export const PAGES = [
     path: PATHS.contacts,
   },
 ];
-export const TEACHERS_LIST = [
-  {
-    id: 1,
-    title: 'Марина Ивановна М',
-    ageCategory: 'более 10лет',
-    mainImage: I_AND_MOM,
-  },
-  {
-    id: 2,
-    title: 'Марина Ивановна М',
-    ageCategory: 'более 10лет',
-    mainImage: I_AND_MOM,
-  },
-  {
-    id: 3,
-    title: 'Марина Ивановна М',
-    ageCategory: 'более 10лет',
-    mainImage: I_AND_MOM,
-  },
-  {
-    id: 4,
-    title: 'Марина Ивановна М',
-    ageCategory: 'более 10лет',
-    mainImage: I_AND_MOM,
-  },
-  {
-    id: 5,
-    title: 'Марина Ивановна М',
-    ageCategory: 'более 10лет',
-    mainImage: I_AND_MOM,
-  },
-];
+export const OUR_TEAM = {
+  founders: FOUNDERS,
+  teachers_list: [
+    {
+      id: 1,
+      title: 'Галина Пичугова',
+      ageCategory: 'более 10лет',
+      mainImage: PICHUGOVA,
+    },
+    {
+      id: 2,
+      title: 'Гузель Казарина',
+      ageCategory: 'более 10лет',
+      mainImage: KAZARINA,
+    },
+    {
+      id: 3,
+      title: 'Елена Гусева',
+      ageCategory: 'более 10лет',
+      mainImage: GUSEVA,
+    },
+    {
+      id: 4,
+      title: 'Лариса Потапова',
+      ageCategory: 'более 10лет',
+      mainImage: POTAPOVA,
+    },
+    {
+      id: 5,
+      title: 'Марина Гомазкова',
+      ageCategory: 'более 10лет',
+      mainImage: HOMAZKOVA,
+    },
+    {
+      id: 6,
+      title: 'Мария Борисова',
+      ageCategory: 'более 10лет',
+      mainImage: BORISOVA,
+    },
+    {
+      id: 7,
+      title: 'Надежда Абрамова',
+      ageCategory: 'более 10лет',
+      mainImage: ABRAMOVA,
+    },
+    {
+      id: 8,
+      title: 'Наталья Лунькова',
+      ageCategory: 'более 10лет',
+      mainImage: LUNKOVA,
+    },
+    {
+      id: 8,
+      title: 'Ольга Калашникова',
+      ageCategory: 'более 10лет',
+      mainImage: KALASHNIKOVA,
+    },
+  ],
+};
 export const SERVICES_LIST = [
   {
     id: 1,
@@ -309,7 +362,7 @@ export const SERVICES_LIST = [
     id: 4,
     title: 'Изо студия',
     ageCategory: 'от 4 лет',
-    mainImage: 'PRESCHOOLER',
+    mainImage: VISUAL_ARTS,
     priceSinglePayment: 'разовое занятие от 800',
     priceAbonement: 'абонемент от 4000',
     url: '/visual-arts',
@@ -449,16 +502,4 @@ export const ADVANTAGES_LIST = [
   'Малые группы (3-9 человек), разделенные по возрастам',
   'Чёткая и структурная программа для каждого возраста, которая наполнена играми и актуальными пособиями',
   'Комплексные занятия: включают  интеллектуальное, творческое, физическое и эмоциональное развитие ребенка',
-];
-
-export const PHOTOS = [
-  { id: 1, src: IMG_1 },
-  { id: 2, src: IMG_2 },
-  { id: 3, src: IMG_3 },
-  { id: 4, src: IMG_4 },
-  { id: 5, src: IMG_5 },
-  { id: 6, src: IMG_6 },
-  { id: 7, src: IMG_7 },
-  { id: 8, src: IMG_8 },
-  { id: 9, src: IMG_9 },
 ];
