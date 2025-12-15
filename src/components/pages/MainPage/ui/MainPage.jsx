@@ -1,5 +1,3 @@
-import SectionServices from '@/components/ui/SectionTeachers';
-import SectionAdvantages from '@/components/ui/SectionAdvantages';
 import BG from '@assets/main-bg.jpg';
 import ANIMAL from '@assets/animal.png';
 import Button from '@/components/ui/Button';
@@ -9,8 +7,6 @@ import { BUTTONS } from '@/constants';
 const MainPage = () => {
   return (
     <div className={styles.main}>
-      {/* <SectionAdvantages />
-      <SectionServices /> */}
       <section className={styles.main_banner}>
         <div className={styles.main_banner__bg}>
           <img src={BG} alt="" />
