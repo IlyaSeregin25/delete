@@ -24,12 +24,12 @@ function App() {
           element: <AboutUsPage />,
         },
         {
-          path: PATHS.photos,
-          element: <PhotosPage />,
-        },
-        {
           path: PATHS.teachers,
           element: <TeachersPage />,
+        },
+        {
+          path: PATHS.photos,
+          element: <PhotosPage />,
         },
         {
           path: PATHS.contacts,

@@ -1,5 +1,4 @@
-import { DATA_FOR_COMMUNICATION } from '@/constants';
-import IMAGE from '@assets/bg1.jpg';
+import { DATA_FOR_COMMUNICATION, OUR_TEAM } from '@/constants';
 import styles from './style.module.css';
 
 const AboutUsPage = () => {
@@ -13,7 +12,7 @@ const AboutUsPage = () => {
           Давайте знакомиться!
         </h2>
         <div className={styles.about_us__image}>
-          <img src={IMAGE} alt="" width="100%" height="400px" />
+          <img src={OUR_TEAM.founders} alt="" width="100%" height="400px" />
         </div>
         <div className={styles.about_us__info}>
           <p>
@@ -66,12 +65,9 @@ const AboutUsPage = () => {
         <div className={styles.about_us__teachers}>
           <h3 className={styles.about_us__teachers_title}>Наши педагоги</h3>
           <div className={styles.about_us__teachers_photos}>
-            <img src={IMAGE} alt="" width="100%" height="200px" />
-            <img src={IMAGE} alt="" width="100%" height="200px" />
-            <img src={IMAGE} alt="" width="100%" height="200px" />
-            <img src={IMAGE} alt="" width="100%" height="200px" />
-            <img src={IMAGE} alt="" width="100%" height="200px" />
-            <img src={IMAGE} alt="" width="100%" height="200px" />
+            {OUR_TEAM.teachers_list?.map(({ mainImage }, ind) => (
+              <img key={ind} src={mainImage} alt="" width="100%" height="350px" />
+            ))}
           </div>
         </div>
       </div>

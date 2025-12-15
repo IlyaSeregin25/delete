@@ -1,5 +1,5 @@
 import TeacherCard from '@/components/ui/TeacherCard';
-import { TEACHERS_LIST } from '@/constants';
+import { OUR_TEAM } from '@/constants';
 import styles from './style.module.css';
 
 const SectionTeachers = () => {
@@ -10,7 +10,7 @@ const SectionTeachers = () => {
           Наши педагоги
         </h2>
         <ul className={styles.teachers__list}>
-          {TEACHERS_LIST?.map(teacher => {
+          {OUR_TEAM.teachers_list?.map(teacher => {
             return (
               <li key={teacher.id} className={styles.teachers__item}>
                 <TeacherCard data={teacher} />
