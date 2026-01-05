@@ -19,7 +19,7 @@ const MainPage = () => {
             <h2 className={styles.main_banner__content_title}>Приглашаем детей и их родителей</h2>
           </div>
           <div className={styles.main_banner__content_links}>
-            <img src={ANIMAL} alt="" width={100} height={80} />
+            <img src={ANIMAL} alt="" width={150} height={105} />
             {BUTTONS.map((button, ind) => {
               return (
                 <Button key={ind} className="type_1" title={button.name} to={button.path}>
