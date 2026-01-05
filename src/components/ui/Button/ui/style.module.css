@@ -23,13 +23,13 @@
   max-width: 21.42857rem;
   padding: 1rem 1.4286rem;
   text-align: center;
-  background-color: var(--green);
+  background-color: var(--orange);
   color: white;
   border: var(--border);
   border-radius: 10px;
 }
 .button.type_1:nth-child(2n) {
-  background-color: var(--orange);
+  background-color: var(--green);
 }
 .button.type_1:hover,
 .button.type_1:active,
