@@ -6,11 +6,12 @@
   flex-direction: column;
 }
 .body__header {
+  position: relative;
+  z-index: 1;
 }
 .body__main {
   flex-grow: 1;
   width: 100%;
-  height: 100%;
 }
 .body__footer {
 }

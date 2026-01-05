@@ -108,6 +108,7 @@
   background-color: transparent;
 }
 .header__bottom_inner {
+  /* background-color: var(--pea); */
 }
 .header__menu {
 }

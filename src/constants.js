@@ -135,57 +135,58 @@ export const OUR_TEAM = {
   teachers_list: [
     {
       id: 1,
-      title: 'Галина Пичугова',
-      ageCategory: 'более 10лет',
-      mainImage: PICHUGOVA,
-    },
-    {
-      id: 2,
-      title: 'Гузель Казарина',
-      ageCategory: 'более 10лет',
-      mainImage: KAZARINA,
-    },
-    {
-      id: 3,
       title: 'Елена Гусева',
-      ageCategory: 'более 10лет',
+      ageCategory: 'Руководитель (более 10лет)',
       mainImage: GUSEVA,
     },
     {
-      id: 4,
+      id: 2,
       title: 'Лариса Потапова',
       ageCategory: 'более 10лет',
       mainImage: POTAPOVA,
     },
     {
-      id: 5,
-      title: 'Марина Гомазкова',
-      ageCategory: 'более 10лет',
-      mainImage: HOMAZKOVA,
-    },
-    {
-      id: 6,
+      id: 3,
       title: 'Мария Борисова',
       ageCategory: 'более 10лет',
       mainImage: BORISOVA,
     },
     {
+      id: 4,
+      title: 'Ольга Калашникова',
+      ageCategory: 'более 10лет',
+      mainImage: KALASHNIKOVA,
+    },
+    {
+      id: 5,
+      title: 'Галина Пичугова',
+      ageCategory: 'более 10лет',
+      mainImage: PICHUGOVA,
+    },
+    {
+      id: 6,
+      title: 'Гузель Казарина',
+      ageCategory: 'более 10лет',
+      mainImage: KAZARINA,
+    },
+
+    {
       id: 7,
+      title: 'Марина Гомазкова',
+      ageCategory: 'более 10лет',
+      mainImage: HOMAZKOVA,
+    },
+    {
+      id: 8,
       title: 'Надежда Абрамова',
       ageCategory: 'более 10лет',
       mainImage: ABRAMOVA,
     },
     {
-      id: 8,
+      id: 9,
       title: 'Наталья Лунькова',
-      ageCategory: 'более 10лет',
+      ageCategory: 'Логопед (более 10лет)',
       mainImage: LUNKOVA,
-    },
-    {
-      id: 8,
-      title: 'Ольга Калашникова',
-      ageCategory: 'более 10лет',
-      mainImage: KALASHNIKOVA,
     },
   ],
 };
