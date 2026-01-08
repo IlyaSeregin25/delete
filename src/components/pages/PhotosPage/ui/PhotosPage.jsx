@@ -31,7 +31,8 @@ const PhotosPage = () => {
         <div className={styles.photos_page__gallery}>
           <div className={styles.gallery}>
             {addresses.length &&
-              addresses.map(({ address, photos, video }, ind) => {
+              addresses.map(({ show, address, photos, video }, ind) => {
+                if (!show) return null;
                 return (
                   <div key={ind} className={styles.gallery__item}>
                     <h4 className={styles.gallery__item_text}>{address}</h4>
