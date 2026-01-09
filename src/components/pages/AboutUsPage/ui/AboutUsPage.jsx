@@ -16,9 +16,9 @@ const AboutUsPage = () => {
         </div>
         <div className={styles.about_us__info}>
           <p>
-            <span>Елена Гусева</span>,<span> Мария Борисова</span> (всем известная как Маруся),
-            <span> Лариса Потапова</span> вместе мы руководители и педагоги Детского центра раннего развития
-            <span> “Теремок”</span>.
+            <span>Лариса Потапова</span>, <span>Мария Борисова</span> (всем известная как Маруся) и
+            <span> Елена Гусева </span>
+            <br></br>вместе мы руководители и педагоги Детского центра раннего развития <span>“Теремок”</span>.
           </p>
           <p>
             Уже больше 30 лет нас связывает крепкая дружба и более 18 лет рабочие отношения. Так сложилось, что мы не
@@ -61,14 +61,6 @@ const AboutUsPage = () => {
             </a>
             , с радость ответим на все ваши вопросы.
           </p>
-        </div>
-        <div className={styles.about_us__teachers}>
-          <h3 className={styles.about_us__teachers_title}>Наши педагоги</h3>
-          <div className={styles.about_us__teachers_photos}>
-            {OUR_TEAM.teachers_list?.map(({ mainImage }, ind) => (
-              <img key={ind} src={mainImage} alt="" width="100%" height="350px" />
-            ))}
-          </div>
         </div>
       </div>
     </section>

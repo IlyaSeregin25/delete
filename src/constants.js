@@ -35,6 +35,7 @@ import IMG_3_3 from './assets/photos/Beloruskay_131/3.jpg';
 import IMG_3_4 from './assets/photos/Beloruskay_131/4.jpg';
 import IMG_3_5 from './assets/photos/Beloruskay_131/5.jpg';
 import IMG_3_6 from './assets/photos/Beloruskay_131/6.jpg';
+import IMG_SHARED_1 from './assets/photos/SharedPhotos/1.jpg';
 
 export const DATA_FOR_COMMUNICATION = {
   telephones: [
@@ -464,4 +465,18 @@ export const ADVANTAGES_LIST = [
   'Малые группы (3-9 человек), разделенные по возрастам',
   'Чёткая и структурная программа для каждого возраста, которая наполнена играми и актуальными пособиями',
   'Комплексные занятия: включают  интеллектуальное, творческое, физическое и эмоциональное развитие ребенка',
+];
+export const SHARED_PHOTOS = [
+  { src: IMG_SHARED_1 },
+  { src: IMG_SHARED_1 },
+  { src: IMG_SHARED_1 },
+  { src: IMG_SHARED_1 },
+  { src: IMG_SHARED_1 },
+  { src: IMG_SHARED_1 },
+  { src: IMG_SHARED_1 },
+  { src: IMG_SHARED_1 },
+  { src: IMG_SHARED_1 },
+  { src: IMG_SHARED_1 },
+  { src: IMG_SHARED_1 },
+  { src: IMG_SHARED_1 },
 ];
