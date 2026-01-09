@@ -1,19 +1,9 @@
-import { useState } from 'react';
-import Modal from '@/components/ui/Modal';
-import Slider from '@/components/ui/Slider';
-import { DATA_FOR_COMMUNICATION } from '@/constants';
+import Gallery from '@/components/ui/Gallery';
+import { DATA_FOR_COMMUNICATION, SHARED_PHOTOS } from '@/constants';
 import styles from './style.module.css';
 
 const PhotosPage = () => {
-  const [showPhoto, setShowPhoto] = useState(false);
-  const [currentPhoto, setCurrentPhoto] = useState({ address: 0, id: 0 });
-
   const { addresses } = DATA_FOR_COMMUNICATION;
-
-  function openPhoto({ address, id }) {
-    setCurrentPhoto({ address, id });
-    setShowPhoto(true);
-  }
 
   return (
     <section className={styles.photos_page} aria-labelledby="photos-title">
@@ -35,21 +25,8 @@ const PhotosPage = () => {
                 if (!show) return null;
                 return (
                   <div key={ind} className={styles.gallery__item}>
-                    <h4 className={styles.gallery__item_text}>{address}</h4>
-                    <div className={styles.gallery__item_photos}>
-                      {photos?.length &&
-                        photos.map(({ src }, index) => {
-                          return (
-                            <div
-                              key={index}
-                              className={styles.gallery__item_photo}
-                              onClick={() => openPhoto({ address: ind, id: index })}
-                            >
-                              <img src={src} alt="" className={styles.gallery__item_img} loading="lazy" />
-                            </div>
-                          );
-                        })}
-                    </div>
+                    <h4 className={styles.gallery__item_title}>{address}</h4>
+                    <Gallery data={photos} theme="night" />
                     <div className={styles.gallery__item_video}>
                       <div className={styles.gallery__item_video_box}>
                         <p>Видео загружается</p>
@@ -66,12 +43,15 @@ const PhotosPage = () => {
                   </div>
                 );
               })}
+            {SHARED_PHOTOS.length && (
+              <div className={styles.gallery__item}>
+                <h4 className={styles.gallery__item_title}>Жизнь Теремка</h4>
+                <Gallery data={SHARED_PHOTOS} theme="night" />
+              </div>
+            )}
           </div>
         </div>
       </div>
-      <Modal active={showPhoto} setActive={setShowPhoto}>
-        <Slider currentPhoto={currentPhoto} setCurrentPhoto={setCurrentPhoto} />
-      </Modal>
     </section>
   );
 };
