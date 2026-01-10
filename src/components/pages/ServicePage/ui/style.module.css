@@ -52,6 +52,7 @@
   font-family: 'Roboto';
   font-size: 1.143rem;
   line-height: 1.5;
+  text-indent: 2rem;
   margin-top: 2rem;
 }
 .service_page__goals {
@@ -85,11 +86,12 @@
   padding-left: 1.4286rem;
   font-family: 'Roboto';
   font-size: 1.286rem;
+  font-weight: 600;
 }
 .service_page__goals_item span {
   padding-left: 1rem;
   font-size: 1.143rem;
-  color: var(--sea);
+  font-weight: 400;
 }
 .service_page__goals_item::after {
   position: absolute;
@@ -116,7 +118,12 @@
 @media (max-width: 767.98px) {
   .service_page__inner {
     grid-template-columns: 1fr;
-    gap: 2rem;
+  }
+  .service_page__title {
+    margin-bottom: 2rem;
+  }
+  .service_page__info {
+    padding-inline: 1rem;
   }
   .service_page__title {
     display: block;

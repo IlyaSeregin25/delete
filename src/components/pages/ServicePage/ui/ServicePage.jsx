@@ -19,11 +19,11 @@ const ServicePage = () => {
             <h2 className={`${styles.service_page__title} ${styles.service_page__title_info}`}>{title}</h2>
             <div className={styles.service_page__subtitle}>
               <p>{ageCategory}</p>
-              <div className={styles.service_page__subtitle_prices}>
+              {/*  <div className={styles.service_page__subtitle_prices}>
                 {price && <p>{price} ₽</p>}
                 {priceSinglePayment && <p>{priceSinglePayment} ₽</p>}
                 {priceAbonement && <p>{priceAbonement} ₽</p>}
-              </div>
+              </div> */}
             </div>
             <div className={styles.service_page__description}>
               {page.description?.map((elem, ind) => (

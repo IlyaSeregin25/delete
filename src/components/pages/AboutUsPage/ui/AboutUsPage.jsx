@@ -1,4 +1,5 @@
 import { DATA_FOR_COMMUNICATION, OUR_TEAM } from '@/constants';
+import IMAGE from '@assets/our_team/founders_2.jpg';
 import styles from './style.module.css';
 
 const AboutUsPage = () => {
@@ -13,6 +14,9 @@ const AboutUsPage = () => {
         </h2>
         <div className={styles.about_us__image}>
           <img src={OUR_TEAM.founders} alt="" width="100%" height="400px" />
+        </div>
+        <div className={styles.about_us__image}>
+          <img src={IMAGE} alt="" width="100%" height="400px" />
         </div>
         <div className={styles.about_us__info}>
           <p>
