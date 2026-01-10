@@ -8,7 +8,7 @@ const MainPage = () => {
   return (
     <div className={styles.main}>
       <section className={styles.main_banner}>
-        <div className={styles.main_banner__bg}>
+        <div className={`${styles.main_banner__bg} container`}>
           <img src={BG} alt="" />
         </div>
         <div className={`${styles.main_banner__content} container`}>
