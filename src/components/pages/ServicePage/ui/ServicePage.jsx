@@ -5,18 +5,25 @@ import styles from './style.module.css';
 const ServicePage = () => {
   const { pageId } = useParams();
   const data = SERVICES_LIST?.filter(({ url }) => url.replace('/', '') == pageId);
-  const { ageCategory, mainImage, title, price, priceSinglePayment, priceAbonement, page } = data[0];
+  const { ageCategory, mainImage, title, price, priceSinglePayment, priceAbonement, page, color = 'black' } = data[0];
+  const cl = {
+    black: styles.black,
+    red: styles.red,
+    orange: styles.orange,
+    green: styles.green,
+    magenta: styles.magenta,
+  };
 
   return (
     <>
       <section className={styles.service_page}>
         <div className={`${styles.service_page__inner} container`}>
-          <h2 className={styles.service_page__title}>{title}</h2>
+          <h2 className={`${styles.service_page__title} ${cl[color]}`}>{title}</h2>
           <div className={styles.service_page__image}>
             <img src={mainImage} alt="" width={410} height={450} />
           </div>
           <div className={styles.service_page__info}>
-            <h2 className={`${styles.service_page__title} ${styles.service_page__title_info}`}>{title}</h2>
+            <h2 className={`${styles.service_page__title} ${styles.service_page__title_info} ${cl[color]}`}>{title}</h2>
             <div className={styles.service_page__subtitle}>
               <p>{ageCategory}</p>
               {/*  <div className={styles.service_page__subtitle_prices}>
