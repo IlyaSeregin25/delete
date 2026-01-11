@@ -1,5 +1,4 @@
 import { DATA_FOR_COMMUNICATION, OUR_TEAM } from '@/constants';
-import IMAGE from '@assets/our_team/founders_2.jpg';
 import styles from './style.module.css';
 
 const AboutUsPage = () => {
@@ -15,13 +14,17 @@ const AboutUsPage = () => {
         <div className={styles.about_us__image}>
           <img src={OUR_TEAM.founders} alt="" width="100%" height="400px" />
         </div>
-        <div className={styles.about_us__image}>
-          <img src={IMAGE} alt="" width="100%" height="400px" />
-        </div>
         <div className={styles.about_us__info}>
           <p>
-            <span>Лариса Потапова</span>, <span>Мария Борисова</span> (всем известная как Маруся) и
-            <span> Елена Гусева </span>
+            <div className={styles.about_us__info_br}>
+              <span>Лариса Потапова</span>,
+            </div>
+            <div className={styles.about_us__info_br}>
+              &nbsp;<span>Мария Борисова</span> (известная как Маруся)
+            </div>
+            <div className={styles.about_us__info_br}>
+              &nbsp;и <span>Елена Гусева </span>
+            </div>
             <br></br>вместе мы руководители и педагоги Детского центра раннего развития <span>“Теремок”</span>.
           </p>
           <p>

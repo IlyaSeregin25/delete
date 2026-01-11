@@ -65,6 +65,7 @@
     -0.143rem 0.143rem 0 #fff,
     0.143rem 0.143rem 0 #fff;
   text-transform: uppercase;
+  word-spacing: 0.5rem;
 }
 .main_banner__content_subtitle {
   padding-inline: 5%;

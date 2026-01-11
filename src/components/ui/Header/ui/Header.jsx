@@ -22,19 +22,26 @@ const Header = () => {
             <img src={LOGO} alt="true" width={300} height={100} />
           </Link>
           <div className={styles.header_top_line__contacts}>
-            <Link
-              to={DATA_FOR_COMMUNICATION.socials.telegram.path}
-              className={styles.header_top_line__contacts_icon}
-              title={'Открыть телеграмм'}
-              aria-label={'Открыть телеграмм'}
-            >
-              <TELEGRAM width={40} height={40} />
-            </Link>
-            <Phones wide={'wide'} icon={false} />
-            <Button to={DATA_FOR_COMMUNICATION?.socials.vk?.path} title={'Запишитесь через ВК'} target={'_blank'}>
-              Запишитесь
-              <VK width={40} height={40} />
-            </Button>
+            <Phones wide={true} icon={false} />
+            <div className={styles.header_top_line__icons}>
+              <span>Запишитесь</span>
+              <Link
+                to={DATA_FOR_COMMUNICATION.socials.telegram.path}
+                className={styles.header_top_line__contacts_icon}
+                title="Телеграмм"
+                aria-label="Открыть телеграмм"
+              >
+                <TELEGRAM width={40} height={40} />
+              </Link>
+              <Link
+                to={DATA_FOR_COMMUNICATION.socials.vk.path}
+                className={styles.header_top_line__contacts_icon}
+                title="Вконтакте"
+                aria-label="Открыть вконтакте"
+              >
+                <VK width={40} height={40} />
+              </Link>
+            </div>
           </div>
           <Link to={PATHS.contacts} className={styles.header_top_line__adresses} title="Наши адреса">
             <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
