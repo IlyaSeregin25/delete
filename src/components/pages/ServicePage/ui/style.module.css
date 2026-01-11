@@ -1,3 +1,18 @@
+.black {
+  color: black;
+}
+.red {
+  color: var(--red);
+}
+.orange {
+  color: var(--orange);
+}
+.green {
+  color: var(--green);
+}
+.magenta {
+  color: var(--magenta);
+}
 .service_page {
   background-color: var(--milk);
   padding-block: var(--paddingBlock);
